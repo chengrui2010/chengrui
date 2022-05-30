@@ -141,19 +141,12 @@
         </footer>
         <!-- Copyright Section-->
         <section class="copyright py-4 text-center text-white">
-            <div class="container"><small class="pre-wrap"><a href="https://chengrui.tk/money.jpg">点击此处捐赠</a><br>当前时间：<span id="sp_time"></span>
-<script type="text/javascript">
-setInterval(function(){
-	var dd = new Date();
-	var y = dd.getFullYear();
-	var m = dd.getMonth() + 1;
-	var d = dd.getDate();
-	var h = dd.getHours();
-	var mi = dd.getMinutes();
-	var s = dd.getSeconds();
-	var str = y + "年" + m + "月" + d + "日&nbsp;&nbsp;" + h + ":" + mi + ":" + s + "&nbsp;&nbsp;星期" + "日一二三四五六".charAt(dd.getDay());
-	document.getElementById("sp_time").innerHTML = str;
-},1000);
+            <div class="container"><small class="pre-wrap"><a href="https://chengrui.tk/money.jpg">点击此处捐赠</a><br>当前时间<script language="javascript">
+var mydate=new Date();
+var mymonth=mydate.getMonth()+1;
+var myday= mydate.getDate();
+var mear= mydate.getYear();
+document.write(mear+"-"+mymonth+"-"+myday);</script>
 <br>
 <a href="https://chengrui.tk/">chengrui.tk</a>|<a href="https://chengrui.ml/">chengrui.ml</a> © chengrui2021-2023<br><a href="https://i.ok4.icu/hbxa">加速境外网站，轻松访问外网(Youtube/Twitter/Tiktok/facebook)就上速蛙云,永不失联</a>
 Ps:新加坡服务器 无需备案 已经有https加密协议证书(有效期至8月份)  </p></small></div>
