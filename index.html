@@ -141,7 +141,37 @@
         </footer>
         <!-- Copyright Section-->
         <section class="copyright py-4 text-center text-white">
-            <div class="container"><small class="pre-wrap"><a href="https://chengrui.tk/money.jpg">点击此处捐赠</a><br>最后更新：2022/5/8 20:00 下次更新：2999/1/1 20:00
+            <div class="container"><small class="pre-wrap"><a href="https://chengrui.tk/money.jpg">点击此处捐赠</a><br>当前时间：<span id="sp_time"></span>
+<script type="text/javascript">
+setInterval(function(){
+	var dd = new Date();
+	var y = dd.getFullYear();
+	var m = dd.getMonth() + 1;
+	var d = dd.getDate();
+	var h = dd.getHours();
+	var mi = dd.getMinutes();
+	var s = dd.getSeconds();
+	var str = y + "年" + m + "月" + d + "日&nbsp;&nbsp;" + h + ":" + mi + ":" + s + "&nbsp;&nbsp;星期" + "日一二三四五六".charAt(dd.getDay());
+	document.getElementById("sp_time").innerHTML = str;
+},1000);
+</script>
+</body>
+</html>
+
+
+    function show(){
+        var dd = new Date();
+        var y = dd.getFullYear();
+        var m = dd.getMonth() + 1;
+        var d = dd.getDate();
+        var h = dd.getHours();
+        var mi = dd.getMinutes();
+        var s = dd.getSeconds();
+        var str = y + "年" + m + "月" + d + "日&nbsp;&nbsp;" + h + ":" + mi + ":" + s + "&nbsp;&nbsp;星期" + "日一二三四五六".charAt(dd.getDay());
+        document.getElementById("sp_time").innerHTML = str;
+    }
+    setInterval(show,1000);
+时间：<span id="sp_time"></span>
 <a href="https://chengrui.tk/">chengrui.tk</a>|<a href="https://chengrui.ml/">chengrui.ml</a> © chengrui2021-2023
 Ps:新加坡服务器 无需备案 已经有https加密协议证书(有效期至8月份)  </p></small></div>
             <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=0 height=0 src="//music.163.com/outchain/player?type=2&id=1441860073&auto=1&height=0"></iframe>
