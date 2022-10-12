@@ -17,12 +17,16 @@
     	} else if ((e.ctrlKey) && (e.keyCode == 83)) {
     		alert('禁止Ctrl+s');
     		return false;
+         
     	}
     }
     // 屏蔽鼠标右键
     document.oncontextmenu = function() {
     	alert('禁止右键');
     	return false;
+           window.onload = function() {
+    // 代码
+    }
     }
     (function($) {
     "use strict"; // Start of use strict
