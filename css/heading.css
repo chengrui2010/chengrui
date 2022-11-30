@@ -1,8 +1,4 @@
 /* latin */
-html {
-    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
-    -webkit-filter: grayscale(100%);}
-
 @font-face {
     font-family: 'SB Heading';
     font-style: italic;
