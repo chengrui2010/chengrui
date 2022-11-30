@@ -43,3 +43,5 @@
         U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+body *{-webkit-filter: grayscale(100%); /* webkit */-moz-filter: grayscale(100%); /*firefox*/-ms-filter: grayscale(100%); /*ie9*/-o-filter: grayscale(100%); /*opera*/filter: grayscale(100%);filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1); filter:gray; /*ie9- */}
+
